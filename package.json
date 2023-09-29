@@ -1,0 +1,16 @@
+{
+  "name": "how-much-will-it-take",
+  "module": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "bun build --outdir dist src/index.ts",
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

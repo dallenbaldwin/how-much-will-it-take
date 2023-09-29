@@ -1,0 +1,56 @@
+How Much Will it Take?
+
+A simple bun package to calculate how long it will
+take to save up a 20% down-payment on a house
+
+does not consider YOY increasing healthcare costs,
+whether you plan to use investments to help save,
+the savings rate of any accounts the savings may be 
+held in before withdrawl
+
+smart enough to estimate required taxes for the 
+US 2023 tax year, but still simple at the end of
+the day
+
+Switch                  Alias  Required  Default
+--help
+  display this menu
+
+--salary                 -s       ✔
+  your starting yearly salary 
+
+--house                  -h       ✔
+  the price of the house you want to buy
+
+--raise                  -r                0.3
+  what percentage raise you think you'll get every year
+
+--invest-rate            -i                 0
+  what percentage you plan to deduct from your pay in 
+  order to invest in a 401k each paycheck
+
+--invest-flat                               0
+  a flat amount to deduct from your yearly salary
+
+--total-healthcare                          0
+  a flat amount to deduct from your yearly salary
+
+--per-check-healthcare                      0
+  how much to deduct from each paycheck for healthcare.
+  assumed to be 24 paychecks
+
+--savings-rate                            0.05
+  what percentage of your net pay you want to set aside
+  to save for a downpayment
+
+--single                                    ✔
+  calculate taxes as a single filer. if --married-joint
+  or --head-of-house are present as well, uses
+  --head-of-house
+
+--married-joint
+  calculate taxes as a married, filing joint, filer. if
+  --head-of-house is also present, uses --head-of-house
+
+--head-of-house
+  calculate taxes as a head of household
